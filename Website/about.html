@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="assets/icons/earth.ico?v=2" sizes="any" />
+  <link rel="shortcut icon" href="assets/icons/earth.ico?v=2" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        var theme = (t === "light" || t === "dark")
+          ? t
+          : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Solar System | About Me</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="side-nav" aria-label="Sidebar">
+        <p class="nav-section">Dashboard</p>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="sources.html">Sources</a>
+
+        <p class="nav-section">Objects</p>
+        <a href="pages/sun.html">The Sun</a>
+        <a href="pages/mercury.html">Mercury</a>
+        <a href="pages/venus.html">Venus</a>
+        <a href="pages/earth.html">Earth</a>
+        <a href="pages/mars.html">Mars</a>
+        <a href="pages/jupiter.html">Jupiter</a>
+        <a href="pages/saturn.html">Saturn</a>
+        <a href="pages/uranus.html">Uranus</a>
+        <a href="pages/neptune.html">Neptune</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="container">
+        <header class="page-header">
+          <h1>About Me</h1>
+          <p class="muted">Project credits and copyright information.</p>
+        </header>
+
+        <section class="section">
+          <div class="card">
+            <h2>Credits</h2>
+            <ul class="list">
+              <li>Presentation By Aziz Massoudi</li>
+              <li>Website By Oubey Chaabani</li>
+              <li>Supervised by Mr. Mehdi</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2>Copyright</h2>
+            <p class="muted">
+              © <span id="year"></span> Solar System Project. All rights reserved.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+

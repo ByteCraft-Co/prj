@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="assets/icons/earth.ico?v=2" sizes="any" />
+  <link rel="shortcut icon" href="assets/icons/earth.ico?v=2" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        var theme = (t === "light" || t === "dark")
+          ? t
+          : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Solar System | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="side-nav" aria-label="Sidebar">
+        <p class="nav-section">Dashboard</p>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="sources.html">Sources</a>
+
+        <p class="nav-section">Objects</p>
+        <a href="pages/sun.html">The Sun</a>
+        <a href="pages/mercury.html">Mercury</a>
+        <a href="pages/venus.html">Venus</a>
+        <a href="pages/earth.html">Earth</a>
+        <a href="pages/mars.html">Mars</a>
+        <a href="pages/jupiter.html">Jupiter</a>
+        <a href="pages/saturn.html">Saturn</a>
+        <a href="pages/uranus.html">Uranus</a>
+        <a href="pages/neptune.html">Neptune</a>
+      </nav>
+
+      <p class="footer-note">
+        Tip: Use the sidebar to navigate between pages.
+      </p>
+    </aside>
+
+    <main class="content">
+      <div class="container">
+        <header class="page-header">
+          <h1>Welcome to the Solar System</h1>
+          <p class="muted">
+            Explore the Sun and the eight planets. Each page includes key facts and a few fun facts.
+          </p>
+        </header>
+
+        <section class="section">
+          <div class="card">
+            <h2>What is the Solar System?</h2>
+            <p class="muted">
+              The Solar System includes the Sun and everything bound to it by gravity: planets, moons,
+              dwarf planets, asteroids, comets, and dust. The Sun contains most of the system's mass,
+              so its gravity controls the major orbits.
+            </p>
+          </div>
+
+          <div class="grid">
+            <a class="tile" href="pages/sun.html">
+              <h3>The Sun</h3>
+              <p class="muted">Our star: fusion, gravity, and solar activity.</p>
+            </a>
+            <a class="tile" href="pages/earth.html">
+              <h3>Earth</h3>
+              <p class="muted">Our home world with liquid water and life.</p>
+            </a>
+            <a class="tile" href="pages/jupiter.html">
+              <h3>Jupiter</h3>
+              <p class="muted">Largest planet with many moons.</p>
+            </a>
+            <a class="tile" href="pages/saturn.html">
+              <h3>Saturn</h3>
+              <p class="muted">Famous for its bright ring system.</p>
+            </a>
+            <a class="tile" href="pages/mars.html">
+              <h3>Mars</h3>
+              <p class="muted">The Red Planet and a target for exploration.</p>
+            </a>
+            <a class="tile" href="about.html">
+              <h3>About Me</h3>
+              <p class="muted">Credits and copyright.</p>
+            </a>
+          </div>
+
+          <div class="card">
+            <h2>Scale note</h2>
+            <p class="muted">
+              Planet sizes and distances are not to scale in most diagrams. Distances are enormous compared
+              to planet sizes. Space is very empty!
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+

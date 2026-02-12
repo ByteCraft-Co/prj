@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="../assets/icons/earth.ico?v=2" sizes="any" />
+  <link rel="shortcut icon" href="../assets/icons/earth.ico?v=2" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        var theme = (t === "light" || t === "dark")
+          ? t
+          : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Solar System | Mercury</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="side-nav" aria-label="Sidebar">
+        <p class="nav-section">Dashboard</p>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About Me</a>
+        <a href="../sources.html">Sources</a>
+
+        <p class="nav-section">Objects</p>
+        <a href="sun.html">The Sun</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="earth.html">Earth</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+        <a href="neptune.html">Neptune</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="container">
+        <header class="page-header">
+          <h1>Mercury</h1>
+          <p class="muted">The smallest planet and the closest to the Sun.</p>
+        </header>
+
+        <section class="section">
+          <div class="feature card">
+            <div class="figure">
+              <img src="../assets/images/mercury.png" alt="Mercury" />
+              <div class="caption">Image: Mercury</div>
+            </div>
+
+            <div>
+              <h2>Overview</h2>
+              <p class="muted">
+                Mercury is a rocky planet with a surface full of craters, similar to Earth's Moon.
+                It has almost no atmosphere, so it cannot hold heat well and temperatures change a lot
+                between day and night.
+              </p>
+
+              <h2>Main facts</h2>
+              <div class="fact-grid">
+                <div class="fact">
+                  <div class="label">Planet type</div>
+                  <div class="value">Rocky (terrestrial)</div>
+                </div>
+                <div class="fact">
+                  <div class="label">Moons</div>
+                  <div class="value">0</div>
+                </div>
+                <div class="fact">
+                  <div class="label">Surface</div>
+                  <div class="value">Craters, cliffs, and plains</div>
+                </div>
+                <div class="fact">
+                  <div class="label">Atmosphere</div>
+                  <div class="value">Extremely thin (exosphere)</div>
+                </div>
+              </div>
+
+              <h2>Fun facts</h2>
+              <ul class="list">
+                <li>Mercury has the shortest year of any planet because it orbits the Sun fastest.</li>
+                <li>Even though it's closest to the Sun, it's not the hottest planet (Venus is hotter).</li>
+                <li>Some craters near its poles may contain water ice.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+
+
+
