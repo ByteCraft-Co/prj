@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="../assets/icons/earth.ico?v=2" sizes="any" />
+  <link rel="shortcut icon" href="../assets/icons/earth.ico?v=2" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        var theme = (t === "light" || t === "dark")
+          ? t
+          : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+  <title>Solar System | The Sun</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="side-nav" aria-label="Sidebar">
+        <p class="nav-section">Dashboard</p>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About Me</a>
+        <a href="../sources.html">Sources</a>
+
+        <p class="nav-section">Objects</p>
+        <a href="sun.html">The Sun</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="earth.html">Earth</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+        <a href="neptune.html">Neptune</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="container">
+        <header class="page-header">
+          <h1>The Sun</h1>
+          <p class="muted">A medium-sized star that powers the entire Solar System.</p>
+        </header>
+
+        <section class="section">
+          <div class="feature card">
+            <div class="figure">
+              <img src="../assets/images/sun.png" alt="The Sun" />
+              <div class="caption">Image: The Sun</div>
+            </div>
+
+            <div>
+              <h2>Overview</h2>
+              <p class="muted">
+                The Sun is a star made mostly of hydrogen and helium. Its gravity keeps planets in orbit,
+                and its energy (light and heat) comes from nuclear fusion in its core.
+              </p>
+
+              <h2>Main facts</h2>
+              <div class="fact-grid">
+                <div class="fact">
+                  <div class="label">Type</div>
+                  <div class="value">G-type main-sequence star (G dwarf)</div>
+                </div>
+                <div class="fact">
+                  <div class="label">Energy source</div>
+                  <div class="value">Nuclear fusion (hydrogen -> helium)</div>
+                </div>
+                <div class="fact">
+                  <div class="label">Role</div>
+                  <div class="value">Provides gravity + light + heat</div>
+                </div>
+                <div class="fact">
+                  <div class="label">Surface activity</div>
+                  <div class="value">Sunspots, flares, solar wind</div>
+                </div>
+              </div>
+
+              <h2>Fun facts</h2>
+              <ul class="list">
+                <li>Light from the Sun takes about 8 minutes to reach Earth.</li>
+                <li>The Sun's outer atmosphere is called the corona.</li>
+                <li>Solar wind can affect satellites and create auroras on Earth.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
+
+
+
